@@ -18,8 +18,8 @@
 
 <body>
     <!-- barra navegacion -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg text-black shadow-5-strong">
+
+    <nav class="navbar navbar-expand-lg text-white shadow-5-strong fixed-top">
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Navbar brand -->
@@ -82,9 +82,10 @@
 
     <!-- Carrousel -->
     <header>
-        <div id="carouselExample" class="carousel slide">
+
+        <div id="carousel" class="carousel slide">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active ">
                     <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="slide1">
                 </div>
                 <div class="carousel-item">
@@ -94,37 +95,62 @@
                     <img src="/assets/img/carousel3.jpg" class="d-block w-100" alt="slide3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </header>
 
+    <!-- seccion quines somos -->
     <section class="bg-black text-light">
-        <h2>¿Quiénes somos?</h2>
+        <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
+        <hr>
         <div class="row">
-            <i class="fa-solid fa-plane-departure"></i>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis qui eveniet eligendi iste alias
-                non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius, voluptatibus
-                similique.</div>
-            <i class="fa-solid fa-earth-americas"></i>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum, quaerat asperiores
-                alias autem in deleniti, quidem natus quisquam iste commodi libero odio molestiae assumenda incidunt
-                obcaecati illo quo aliquam!</div>
-            <i class="fa-solid fa-route"></i>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam iste harum fuga nihil
-                perspiciatis fugit. At minima harum molestiae sunt mollitia quia error, ut nisi deserunt molestias
-                facilis porro.</div>
+            <div class="col-sm-12 col-md-6 col-lg-3 ">
+                <div class="card bg-black text-light">
+                    <i class="fa-solid fa-plane-departure card-img-top text-center"></i>
+                    <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        quis qui
+                        eveniet eligendi iste alias
+                        non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
+                        voluptatibus
+                        similique.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div class="card bg-black text-light">
+                <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis
+                    qui
+                    eveniet eligendi iste alias
+                    non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
+                    voluptatibus
+                    similique.</p>
+                <i class="fa-solid fa-earth-americas card-img-bottom text-center"></i>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div class="card bg-black text-light">
+                <i class="fa-solid fa-route card-img-top text-center"></i>
+                <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis
+                    qui
+                    eveniet eligendi iste alias
+                    non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
+                    voluptatibus
+                    similique.</p>
+            </div>
         </div>
     </section>
 
-    <section class="bg-black">
+    <!-- seccion destacados -->
+    <section class="bg-black text-light">
         <h2 class="text-center mb-3">DESTACADOS</h2>
+        <hr>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card">
@@ -168,8 +194,8 @@
             </div>
     </section>
 
+    <!-- formulario contacto -->
     <section class="bg-black text-light">
-        <!-- formulario contacto -->
         <section id="contac">
             <div class="container">
                 <div class="row justify-content-center">
@@ -177,6 +203,7 @@
                         <div class="text-center">
                             <h3>Contáctame</h3>
                         </div>
+                        <hr>
                         <form action="">
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Nombre">
