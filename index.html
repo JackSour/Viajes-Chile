@@ -19,66 +19,41 @@
 <body>
     <!-- barra navegacion -->
 
-    <nav class="navbar navbar-expand-lg text-white shadow-5-strong fixed-top">
-        <!-- Container wrapper -->
+    <nav id="inicio" class="navbar navbar-expand-lg text-white shadow-5-strong fixed-top">
         <div class="container-fluid">
+
             <!-- Navbar brand -->
-            <a class="navbar-brand" href="#"><img id="logo" src="/assets/img/viajes.svg" alt="imagen logo">Viajes
-                Chile</a>
+            <a class="navbar-brand text-light ms-5" href="#logo"><img id="logo" src="/assets/img/viajes.svg"
+                    alt="imagen logo">Viajes Chile</a>
 
             <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#carousel">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a class="nav-link d-none d-sm-block" href="#quienes">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <!-- Navbar dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-mdb-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Another action</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
-                <!-- Left links -->
             </div>
-            <!-- Collapsible wrapper -->
         </div>
-        <!-- Container wrapper -->
     </nav>
-    <!-- Navbar -->
+
 
     <!-- Carrousel -->
     <header>
@@ -106,86 +81,85 @@
         </div>
     </header>
 
-    <!-- seccion quines somos -->
-    <section class="bg-black text-light">
-        <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
-        <hr>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3 ">
+    <!-- seccion quienes somos -->
+    <section class="text-light justify-content-evenly pt-3 d-none d-sm-block">
+        <h2 id="quienes" class="text-center">¿QUIÉNES SOMOS?</h2>
+        <hr class="mx-5">
+        <div class="row d-flex justify-content-around py-5 px-5">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="card bg-black text-light">
-                    <i class="fa-solid fa-plane-departure card-img-top text-center"></i>
-                    <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
-                        quis qui
-                        eveniet eligendi iste alias
-                        non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
-                        voluptatibus
-                        similique.</p>
+                    <i class="fa-solid fa-plane-departure card-img-top text-center bg-info"></i>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Laudantium reiciendis, dolore voluptates quo impedit accusamus, perspiciatis tempore quia
+                        voluptas aperiam distinctio dignissimos natus! Possimus commodi recusandae, eos quod praesentium
+                        excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus qui,
+                        molestiae laudantium ducimus cumque ipsum dolores eligendi tempora fugiat illum libero, ea
+                        aliquid possimus! Obcaecati quis recusandae pariatur animi!</p>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 ">
-            <div class="card bg-black text-light">
-                <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis
-                    qui
-                    eveniet eligendi iste alias
-                    non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
-                    voluptatibus
-                    similique.</p>
-                <i class="fa-solid fa-earth-americas card-img-bottom text-center"></i>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab
+                        at laudantium optio earum, recusandae atque, magnam nisi, tenetur excepturi velit? Omnis
+                        exercitationem quidem cum vitae provident porro aut quam! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Perferendis, aperiam quasi amet accusamus porro impedit voluptates culpa sint
+                        necessitatibus, beatae iusto, cupiditate assumenda? Possimus totam aut vitae quaerat itaque
+                        assumenda!</p>
+                    <i class="fa-solid fa-earth-americas card-img-bottom text-center bg-info"></i>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 ">
-            <div class="card bg-black text-light">
-                <i class="fa-solid fa-route card-img-top text-center"></i>
-                <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis
-                    qui
-                    eveniet eligendi iste alias
-                    non saepe doloremque soluta sit, voluptas quasi facere, ullam eos quisquam distinctio eius,
-                    voluptatibus
-                    similique.</p>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card bg-black text-light">
+                    <i class="fa-solid fa-route card-img-top text-center bg-info"></i>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+                        obcaecati est! Sed veniam delectus minima nobis praesentium laudantium atque doloremque, ipsam
+                        consectetur nam, numquam deleniti harum magnam iusto optio officiis? Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Ut dolorum, accusamus exercitationem expedita maiores quaerat
+                        praesentium dolor perferendis commodi fugiat similique corporis, sed recusandae veniam! Odit
+                        perferendis repellendus libero necessitatibus?</p>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- seccion destacados -->
-    <section class="bg-black text-light">
-        <h2 class="text-center mb-3">DESTACADOS</h2>
-        <hr>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+    <section class="text-light">
+        <h2 id="destacados" class="text-center mb-3">DESTACADOS</h2>
+        <hr class="mx-5">
+        <div class="row d-flex justify-content-around py-5 px-5">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <img src="/assets/img/card1.jpg" class="card-img-top" alt="imagen 1">
-                    <div class="card-body">
+                    <div class="card-body bg-info text-light">
                         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <img src="/assets/img/card2.jpg" class="card-img-top" alt="imagen 2">
-                    <div class="card-body">
+                    <div class="card-body bg-info text-light">
                         <h5 class="card-title">Consectetur adipisicing elit</h5>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <img src="/assets/img/card3.jpg" class="card-img-top" alt="imagen 3">
-                    <div class="card-body">
+                    <div class="card-body bg-info text-light">
                         <h5 class="card-title">Culpa doloribus</h5>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <div class="card">
                     <img src="/assets/img/card4.jpg" class="card-img-top" alt="imagen 4">
-                    <div class="card-body">
+                    <div class="card-body bg-info text-light">
                         <h5 class="card-title">Fugiat at aspernatur recusandae</h5>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
@@ -195,12 +169,12 @@
     </section>
 
     <!-- formulario contacto -->
-    <section class="bg-black text-light">
+    <section class="text-light pb-3">
         <section id="contac">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="">
-                        <div class="text-center">
+                        <div id="contacto" class="text-center">
                             <h3>Contáctame</h3>
                         </div>
                         <hr>
@@ -213,7 +187,7 @@
                             <textarea class="form-control" id="mensaje" placeholder="Escribe aquí tu mensaje"
                                 rows="3"></textarea>
                         </form>
-                        <button id="enviar" type="submit" class="btn btn-info mt-3 mb-3">Enviar</button>
+                        <button id="enviar" type="submit" class="btn btn-info mt-3 mb-3 text-light">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -225,14 +199,16 @@
     <footer>
         <div class="container-fluid text-center bg-info fs-3">
             <div class="row aling-items-center py-3">
-                <div class="col">
+                <div class="col text-light">
                     VIAJES CHILE
                 </div>
                 <div class="col">
-                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github text-light"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin text-light"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="fa-brands fa-square-twitter text-light"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i
+                            class="fa-brands fa-square-facebook text-light"></i></a>
                 </div>
             </div>
         </div>
@@ -247,6 +223,36 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="/assets/js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
 </body>
 
 </html>
