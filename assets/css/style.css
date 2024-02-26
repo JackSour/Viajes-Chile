@@ -4,24 +4,36 @@
     border: 0;
 }
 
+/* cuerpo */
 body {
     font-family: "Roboto Slab", serif;
     background-color: black;
 }
 
- /* logo nav */
+/* titulos */
+h2 {
+    font-size: 30pt;
+    font-weight: 700;
+}
+
+/* logo nav */
 #logo {
     width: 5%;
 }
 
-.nav-link {
+.navbar-toggler-icon {
     color: white;
 }
 
- /* carrusel */
+/* fuentes link */
+.nav-link {
+    color: white;
+    border-color: black;
+}
+
+/* carrusel */
 #carousel .carousel-item {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     height: 100vh;
 }
-
